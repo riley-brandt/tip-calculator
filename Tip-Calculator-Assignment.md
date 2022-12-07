@@ -20,3 +20,11 @@
 ```
 onChange={(evt) => setBill(evt.target.value)}
 ```
+
+## Limit Number of Characters
+
+Use the `.toFixed(#)` dot notation to limit the number of characters, ie:
+
+```
+<p>Tip total: ${totalTip.toFixed(2)}</p>
+```

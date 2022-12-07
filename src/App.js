@@ -47,9 +47,9 @@ function App() {
         </div>
 
         <div className="totals">
-          <p>Tip total: ${totalTip}</p>
-          <p>tip per person: ${tipPerPerson}</p>
-          <p>payment per person: ${payPerPerson}</p>
+          <p>Tip total: ${totalTip.toFixed(2)}</p>
+          <p>tip per person: ${tipPerPerson.toFixed(2)}</p>
+          <p>payment per person: ${payPerPerson.toFixed(2)}</p>
         </div>
       </div>
     </div>
