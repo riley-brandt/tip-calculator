@@ -28,3 +28,21 @@ Use the `.toFixed(#)` dot notation to limit the number of characters, ie:
 ```
 <p>Tip total: ${totalTip.toFixed(2)}</p>
 ```
+
+## Fix Chrome Input CSS
+
+I just discovered that ***outline: none;*** removes the default chrome based `:focus` behaviour and uses the desired css like a fallback.
+
+```
+input {
+  outline: none;
+}
+
+input:active {
+  border: 1px solid #00a2dd;
+}
+
+input:focus {
+  border: 1px solid #00a2dd;
+}
+```
