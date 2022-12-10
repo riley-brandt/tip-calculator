@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="app-container">
       <div>
-        <h1>Tip Calculator</h1>
+        <h1>Split the Bill</h1>
       </div>
       <div className="app">
         <div className="inputs-div">
@@ -46,15 +46,19 @@ function App() {
           />
         </div>
 
+        <div className="title-bottom">
+          <span>Each person pays:</span>
+        </div>
+
         <div className="totals">
-          <div>
+          {/* <div>
             <span>Tip amount: </span>
             <span className="right-text">${totalTip.toFixed(2)}</span>
-          </div>
+          </div> */}
           {/* <p>Tip per person: ${tipPerPerson.toFixed(2)}</p> */}
 
           <div>
-            <span>Total per person: </span>
+            {/* <span>Total per person: </span> */}
             <span className="right-text">${payPerPerson.toFixed(2)}</span>
           </div>
         </div>

@@ -16,7 +16,10 @@
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Cherry Swash", cursive;
+  font-size: 4rem;
+  /* text-shadow: 0px 4px white; */
+  /* color: #00a2dd; */
 }
 
 .app {
@@ -26,6 +29,7 @@ h1 {
   padding: 2rem;
   background-color: white;
   color: black;
+  border: 1px solid #bfbebb;
   border-radius: 5%;
   box-shadow: 5px 5px 20px black;
   width: auto;
@@ -39,25 +43,24 @@ label {
 .inputs-div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 input {
   margin: 10px 0;
   padding: 0.5rem 1rem;
   width: 88%;
-  border: 1px solid #c9cbce;
-  background-color: #f3f6f8;
+  border: 2px solid #c9cbce;
+  background-color: white;
   border-radius: 5px;
   outline: none;
 }
 
-input:active {
-  border: 1px solid #00a2dd;
-}
-
+input:active,
+input:hover,
 input:focus {
-  border: 1px solid #00a2dd;
+  border: 2px solid #00a2dd;
+  background-color: #c6eaf7;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -73,14 +76,17 @@ input[type="number"] {
   appearance: textfield;
 }
 
+.title-bottom {
+  margin-bottom: 1rem;
+}
+
 .totals {
-  /* line-height: 0.6; */
-  background-color: #e3e6e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+  /* background-color: #e3e6e8; */
+  background-color: #00a2dd;
   border-radius: 10px;
   padding: 1.2rem 1rem;
 }
-
-/* .right-text {
-  text-align: right;
-  background-color: red;
-} */
