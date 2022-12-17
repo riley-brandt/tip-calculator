@@ -1,5 +1,13 @@
 # Tip Calculator Assignment
 
+### Current To Do List
+* center the bottom div
+* add a menu/restaurant icon
+* add a more details accordion button
+* possible to zoom?
+* add credit
+* update the ReadMe File
+
 ### 3 Inputs
 
 * bill total

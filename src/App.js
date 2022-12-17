@@ -7,7 +7,7 @@ function App() {
   const [people, setPeople] = useState(1);
 
   const totalTip = bill * tip * 0.01;
-  const tipPerPerson = totalTip / people;
+  // const tipPerPerson = totalTip / people;
   const payPerPerson = (bill + totalTip) / people;
 
   return (
@@ -47,7 +47,7 @@ function App() {
         </div>
 
         <div className="title-bottom">
-          <span>Each person pays:</span>
+          <h3>Each person pays:</h3>
         </div>
 
         <div className="totals">
@@ -59,7 +59,7 @@ function App() {
 
           <div>
             {/* <span>Total per person: </span> */}
-            <span className="right-text">${payPerPerson.toFixed(2)}</span>
+            <span className="total-text">${payPerPerson.toFixed(2)}</span>
           </div>
         </div>
       </div>

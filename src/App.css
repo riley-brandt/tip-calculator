@@ -17,22 +17,22 @@
 
 h1 {
   font-family: "Cherry Swash", cursive;
-  font-size: 4rem;
-  /* text-shadow: 0px 4px white; */
-  /* color: #00a2dd; */
+  font-size: 3.6rem;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 2rem;
+  padding-right: 2.5rem;
   background-color: white;
   color: black;
   border: 1px solid #bfbebb;
   border-radius: 5%;
   box-shadow: 5px 5px 20px black;
   width: auto;
+  /* border: 1px solid red; */
 }
 
 label {
@@ -43,13 +43,15 @@ label {
 .inputs-div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  /* border: 1px solid red; */
 }
 
 input {
   margin: 10px 0;
   padding: 0.5rem 1rem;
-  width: 88%;
+  font-size: large;
+  /* width: 90%; */
   border: 2px solid #c9cbce;
   background-color: white;
   border-radius: 5px;
@@ -77,7 +79,7 @@ input[type="number"] {
 }
 
 .title-bottom {
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 .totals {
@@ -85,8 +87,13 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   line-height: 2rem;
-  /* background-color: #e3e6e8; */
   background-color: #00a2dd;
+  color: white;
   border-radius: 10px;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem 2rem;
+}
+
+.total-text {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
