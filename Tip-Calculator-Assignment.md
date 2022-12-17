@@ -7,6 +7,8 @@
 * possible to zoom?
 * add credit
 * update the ReadMe File
+* Bug: if type=NaN, then ...
+* Bug: max number of characters
 
 ### 3 Inputs
 
