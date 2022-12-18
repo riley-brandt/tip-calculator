@@ -8,7 +8,19 @@ function App() {
 
   const totalTip = bill * tip * 0.01;
   // const tipPerPerson = totalTip / people;
-  const payPerPerson = (bill + totalTip) / people;
+  // const payPerPerson = (bill + totalTip) / people;
+
+  let mathTotal = 0;
+
+  if (isNaN(bill)) {
+    mathTotal = 0;
+  } else if (isNaN(tip)) {
+    mathTotal = 0;
+  } else if (isNaN(people)) {
+    mathTotal = 0;
+  } else {
+    mathTotal = (bill + totalTip) / people;
+  }
 
   return (
     <div className="app-container">
@@ -58,8 +70,7 @@ function App() {
           {/* <p>Tip per person: ${tipPerPerson.toFixed(2)}</p> */}
 
           <div>
-            {/* <span>Total per person: </span> */}
-            <span className="total-text">${payPerPerson.toFixed(2)}</span>
+            <span className="total-text">${mathTotal.toFixed(2)}</span>
           </div>
         </div>
       </div>

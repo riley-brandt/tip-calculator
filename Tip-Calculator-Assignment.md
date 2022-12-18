@@ -1,14 +1,15 @@
 # Tip Calculator Assignment
 
 ### Current To Do List
-* center the bottom div
+* ~~center the bottom div~~
 * add a menu/restaurant icon
-* add a more details accordion button
+* ~~add a more details accordion button~~
 * possible to zoom?
 * add credit
 * update the ReadMe File
-* Bug: if type=NaN, then ...
+* ~~ Bug: if type=NaN, then ... ~~
 * Bug: max number of characters
+* Feature: add reset all values button
 
 ### 3 Inputs
 
@@ -56,3 +57,21 @@ input:focus {
   border: 1px solid #00a2dd;
 }
 ```
+
+## Fix The $NaN Error
+
+Check if the state === NaN by using the isNaN() function/method:
+
+```
+  let mathTotal = 0;
+
+  if (isNaN(bill)) {
+    mathTotal = 0;
+  } else if (isNaN(tip)) {
+    mathTotal = 0;
+  } else if (isNaN(people)) {
+    mathTotal = 0;
+  } else {
+    mathTotal = (bill + totalTip) / people;
+  }
+``` 
