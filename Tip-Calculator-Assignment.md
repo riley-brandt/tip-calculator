@@ -75,3 +75,64 @@ Check if the state === NaN by using the isNaN() function/method:
     mathTotal = (bill + totalTip) / people;
   }
 ``` 
+
+# Lessons Learned
+
+### isNaN()
+* is typeOf not a number? true or false.
+* combine with if/else (or ternary operator?)
+
+```
+if (isNaN(bill)) {
+    mathTotal = 0;
+  } else {
+    mathTotal = (bill + totalTip) / people;
+  }
+```
+
+### .toFixed
+* limit the number of digits
+
+### parseInt()
+* Sets to a value, not a string
+
+```
+onChange={(evt) => setTip(parseInt(evt.target.value))}
+```
+
+### States
+* use state/set state
+
+```
+  const [bill, setBill] = useState(0);
+  const [tip, setTip] = useState(0);
+  const [people, setPeople] = useState(1);
+```
+
+
+### Inputs
+
+```
+(evt.target.value)
+```
+
+```
+     type="number"
+            id="people"
+            name="people"
+            min="1"
+            value={people}
+```
+
+### onChange Events
+
+```
+onChange={(evt) => setPeople(parseInt(evt.target.value))}
+```
+
+### Return Statement
+
+* Above the return, can write regular JavaScript
+* Below/Inside the return statement, need {JSX} 
+
+
