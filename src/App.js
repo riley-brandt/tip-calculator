@@ -35,6 +35,10 @@ function App() {
             id="bill-total"
             name="bill"
             min="0"
+            // inputmode="decimal"
+            // pattern="^\d*(\.\d{0,2})?$"
+            // step="0.01"
+            // placeholder="0.00"
             value={bill}
             onChange={(evt) => setBill(parseInt(evt.target.value))}
           />

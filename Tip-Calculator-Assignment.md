@@ -76,7 +76,10 @@ Check if the state === NaN by using the isNaN() function/method:
   }
 ``` 
 
+---
+
 # Lessons Learned
+
 
 ### isNaN()
 * is typeOf not a number? true or false.
