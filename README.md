@@ -2,7 +2,7 @@
 
 *Split the Bill* is a simple tip calculator application I made to learn **React JS**. I kept the feature list short, to keep the application clean and easy to use.
 
-![](./img/screenshot-crop-1000px.png)
+![](./img/screenshot-crop-02-1000px.png)
 
 ### Live Demo
 
@@ -10,19 +10,17 @@
 
 ## Lessons Learned
 
-### States
-* use state/set state
+### React JS Hooks
+
+I was able to declare, read, and update states with the useState() hook.
 
 ```
   const [bill, setBill] = useState(0);
-  const [tip, setTip] = useState(0);
-  const [people, setPeople] = useState(1);
 ```
 
 ### onChange Events
 
-* `evt.target.value` captures what the user types in an input
-* To capture an input's value on change:
+I captured the user's input with `evt.target.value`, then set a state to that value.
 
 ```
 onChange={(evt) => setPeople(parseInt(evt.target.value))}
@@ -49,27 +47,20 @@ ${mathTotal.toFixed(2)}
 
 
 ### parseInt()
-* Sets to a value, not a string
+
+I learned to change a string into a numeric value type with parseInt().
 
 ```
 onChange={(evt) => setTip(parseInt(evt.target.value))}
 ```
 
-### Fix Chrome Input CSS
+### Cross Browser Compatibility
 
-I just discovered that ***outline: none;*** removes the default chrome based `:focus` behaviour and uses the desired css like a fallback.
+To make my input styles the same across browsers, I learned that `outline: none` removes the default chrome based `:focus` behaviour.
 
 ```
 input {
   outline: none;
-}
-
-input:active {
-  border: 1px solid #00a2dd;
-}
-
-input:focus {
-  border: 1px solid #00a2dd;
 }
 ```
 
