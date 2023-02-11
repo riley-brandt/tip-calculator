@@ -6,7 +6,7 @@
 
 ### Live Demo
 
-[Try the app now!]()
+[Try the app now!](https://riley-brandt.github.io/tip-calculator/)
 
 ## Lessons Learned
 
